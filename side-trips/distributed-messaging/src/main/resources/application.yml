@@ -1,0 +1,15 @@
+logging:
+  level:
+    com.learning.microservices.messaging: INFO
+    com.learning.microservices.messaging.util: DEBUG
+
+spring:
+  devtools.restart.enabled: false
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+    template:
+      exchange: ecommerce.sidetrips
